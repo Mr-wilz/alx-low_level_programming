@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 char letter;
@@ -17,5 +17,5 @@ putchar(letter);
 letter++;
 }
 putchar('\n');
-return 0;
+return (0);
 }

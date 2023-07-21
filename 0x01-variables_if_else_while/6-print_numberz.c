@@ -6,12 +6,11 @@
 */
 int main(void)
 {
-int number = 0;
-while (number <= 9)
+int digit;
+for (digit = 0; digit <= 9; digit++)
 {
-utchar('0' + number);
-number++;
+putchar(digit + '0');
 }
 putchar('\n');
-return 0;
+return (0);
 }

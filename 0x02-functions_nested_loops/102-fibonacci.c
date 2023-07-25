@@ -7,11 +7,12 @@
 int main(void)
 {
 	int num1 = 1;
-	int num2 = 2
-
+	int num2 = 2;
+	int i;
+	
 	printf("%d, %d", num1, num2);
 
-	for (int i = 2; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 		int nextNum = num1 + num2;
 		printf(", %d", nextNum);

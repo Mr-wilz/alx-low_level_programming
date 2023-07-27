@@ -5,23 +5,22 @@
  */
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	unsigned long fibol = 0, fibo2 = 1, fibosum;
+	float total_sum;
 
-	while (i < 50)
+	while (1)
 	{
-		if (i == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf(", %ld", k);
-		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %ld", k);
-		}
-		++1;
+		fibosum = fibo1 + fibo2
+		if (fibosm > 400000)
+			break;
+
+		if ((fibosum % 2) == 0)
+			total_sum += fibosum;
+
+		fibo1 = fibo2;
+		fibo2 = fibosum;
 	}
-	printf("\n");
+	printf("%.0f\n", total sum);
+
 	return (0);
 }

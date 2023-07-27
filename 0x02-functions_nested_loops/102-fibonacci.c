@@ -5,22 +5,27 @@
  */
 int main(void)
 {
-	unsigned long fibo1 = 0, fibo2 = 1, fibosum;
-	float total_sum;
+        unsigned long fibo1 = 1, fibo2 = 2, fibosum;
+        float total_sum;
 
-	while (1)
-	{
-		fibosum = fibo1 + fibo2;
-		if (fibosum > 400000)
-			break;
+        while (1)
+        {
+                printf("%.0f, %.0f", fibo1, fibo2);
 
-		if ((fibosum % 2) == 0)
-			total_sum += fibosum;
+                for (int i = 1; i < 50; i++)
+                {
+                        fibosum = fibo1 + fibo2;
+                        printf(", %.0f", fibosum);
+                }
+                if (fibosum > 400000)
+                        break;
 
-		fibo1 = fibo2;
-		fibo2 = fibosum;
-	}
-	printf("%.0f\n", total_sum);
+                if ((fibosum % 2) == 0)
+                        total_sum += fibosum;
 
+                fibo1 = fibo2;
+                fibo2 = fibosum;
+        }
+        printf("%.0f\n", total_sum);
 	return (0);
 }

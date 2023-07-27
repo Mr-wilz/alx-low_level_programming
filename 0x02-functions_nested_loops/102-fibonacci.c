@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-	unsigned long fibol = 0, fibo2 = 1, fibosum;
+	unsigned long fibo1 = 0, fibo2 = 1, fibosum;
 	float total_sum;
 
 	while (1)
 	{
 		fibosum = fibo1 + fibo2
-		if (fibosm > 400000)
+		if (fibosum > 400000)
 			break;
 
 		if ((fibosum % 2) == 0)

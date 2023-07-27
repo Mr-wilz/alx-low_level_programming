@@ -10,7 +10,7 @@ int main(void)
 
 	while (1)
 	{
-		fibosum = fibo1 + fibo2
+		fibosum = fibo1 + fibo2;
 		if (fibosum > 400000)
 			break;
 
@@ -20,7 +20,7 @@ int main(void)
 		fibo1 = fibo2;
 		fibo2 = fibosum;
 	}
-	printf("%.0f\n", total sum);
+	printf("%.0f\n", total_sum);
 
 	return (0);
 }

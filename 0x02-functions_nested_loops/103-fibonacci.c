@@ -6,21 +6,21 @@
 
 int main(void)
 {
-	unsigned long fibo1 = 0, fibo2 = 1, fibosum;
-	float total_sum;
+	long int fibo1 = 1;
+	long int fibo2 = 2;
+	long int fibosum = 0;
+	long int sum = 2;
 
-	while (1)
+	while (fibosum <= 4000000)
 	{
 		fibosum = fibo1 + fibo2;
-		if (fibosum > 400000)
-			break;
-
-		if ((fibosum % 2) == 0)
-
-			total_sum += fibosum;
-			fibo1 = fibo2;
-			fibo2 = fibosum;
+	if ((fibosum % 2) == 0)
+	{
+		sum += fibosum;
 	}
-	printf("%.0f\n", total_sum);
+	fibo1 = fibo2;
+	fibo2 = fibosum;
+	}
+	printf("%ld\n", sum);
 	return (0);
 }

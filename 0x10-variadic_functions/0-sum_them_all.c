@@ -13,9 +13,9 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 
-	unsgned int m;
+	unsigned int m;
 
-	double addNum = (0);
+	unsigned int addNum = (0);
 
 	va_start(ap, n);
 

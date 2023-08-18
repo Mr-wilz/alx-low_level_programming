@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", strings);
 		}
 		else
-			printf("(nill)");
+			printf("(nil)");
 
 		if (p != n - 1)
 		{

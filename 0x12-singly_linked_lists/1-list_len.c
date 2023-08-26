@@ -8,15 +8,15 @@
 size_t list_len(const list_t *h)
 {
 	size_t checker = 0;
+
 	while (h)
 	{
 	if (!h)
-		return (-1);
-	else
 	{
-		h = h->next;
-		++checker;
+		return (-1);
 	}
+	h = h->next;
+	++checker;
 	}
 	return (checker);
 }

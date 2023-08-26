@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stddef.h>
 
-typdef struct mylist_s
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;

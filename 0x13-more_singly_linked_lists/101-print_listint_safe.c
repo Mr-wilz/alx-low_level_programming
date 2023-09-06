@@ -21,14 +21,14 @@ size_t print_listint_safe(const listint_t *head)
 
 	while (current)
 	{
-	for (i = 0; i < count; i++)
-	{
-		if (current == visited[i])
+		for (i = 0; i < count; i++)
 		{
-			printf("-> [%p] %d\n", (void *)current, current->n;
-			return (count);
+			if (current == visited[i])
+			{
+				printf("-> [%p] %d\n", (void *)current, current->n);
+				return (count);
+			}
 		}
-	}
 
 	printf("[%p] %d\n", (void *)current, current->n);
 	visited[count++] = current;

@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	if (!head)
 	{
-		printf("Linked list is empty\n");
+		printf("0\n");
 		exit(98);
 	}
 

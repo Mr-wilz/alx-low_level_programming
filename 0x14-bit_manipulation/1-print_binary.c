@@ -3,12 +3,14 @@
 /**
  * print_binary - prints the binary version of a number
  * @n: number to be printed in binary
+ *
+ * Return: 0 on success.
  */
 
 void print_binary(unsigned long int n)
 {
-	int shift = sizeof(unsigned long int) * 8 - 1;
-	int flag = 0;
+	int b = sizeof(unsigned long int) * 8 - 1;
+	int c = 0;
 
 
 	if (n == 0)
@@ -17,19 +19,19 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (shift >= 0)
+	while (b >= 0)
 	{
-		unsigned long int bit = n >> shift;
+		unsigned long int bit = n >> b;
 
 		if (bit & 1)
 		{
 			_putchar('1');
-			flag = 1;
+			c = 1;
 		}
-		else if (flag)
+		else if (c)
 		{
 			_putchar('0');
 		}
-		shift--;
+		b--;
 	}
 }
